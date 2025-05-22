@@ -1,6 +1,6 @@
 // 核心识别函数
     async function analyzeImage() {
-        const ACCESS_TOKEN = '24.1c6c3a889c7f623cf97526d2c3ae2d7c.2592000.1747633589.282335-118555727'; 
+        const ACCESS_TOKEN = '24.66579e1753c9a3f7795e47caf7c3c2c4.2592000.1750478151.282335-118555727'; 
         const API_URL = `https://aip.baidubce.com/rest/2.0/image-classify/v2/dish?access_token=${ACCESS_TOKEN}`;
 
         const fileInput = document.getElementById('imageInput');
@@ -23,8 +23,8 @@
             // 构建请求参数
             const params = new URLSearchParams();
             params.append('image', base64Data); 
-            params.append('top_num', '5'); // 可修改返回结果数量
-            params.append('baike_num', '5'); // 百科结果数量
+            params.append('top_num', '3'); // 可修改返回结果数量
+            params.append('baike_num', '3'); // 百科结果数量
 
             // 发送请求
             const response = await fetch(API_URL, {

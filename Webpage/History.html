@@ -1,1 +1,29 @@
 <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepDiet - 历史记录</title>
+    <link rel="stylesheet" href="static/css/History_styles.css">
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="static/image/background.mp4" type="video/mp4"> 
+    </video>
+    <header>
+        <h1>历史识别记录</h1>
+        <button onclick="clearHistory()">清空记录</button>
+        <button class="return-home" onclick="handleLogin_HomePage()">返回主页</button>
+    </header>
+
+    <main id="history-list">
+        <!-- 记录将通过 JS 动态插入 -->
+    </main>
+    <script>
+        function handleLogin_HomePage() {
+            window.location.href = 'HomePage.html'; // 修改为你的实际页面路径
+        }
+    </script>
+    <script src="static/js/history.js"></script>
+</body>
+</html>

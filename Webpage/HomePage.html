@@ -15,8 +15,10 @@
     <div id="overlay"></div>
 
     <div class="top-right-buttons">
-        <button class="profile-btn" onclick="handleLogin_Identify">个人主页</button>
-        <button class="feedback-btn">反馈</button>
+        <button class="profile-btn" onclick="handleLogin_Person">个人主页</button>
+        <button class="feedback-btn" onclick="handleLogin_Feedback">反馈</button>
+        <button class="Forum" onclick="handleLogin_Forum()">论坛</button>
+        <button class="Using-history" onclick="handleLogin_History()">历史</button>
     </div>
 
     <div class="login-container">
@@ -38,8 +40,14 @@
         function handleLogin_Identify() {
             window.location.href = 'Identify.html'; // 修改为你的实际页面路径
         }
+        function handleLogin_Person() {
+            window.location.href = 'Person.html'; // 修改为你的实际页面路径
+        }
         function handleLogin_History() {
             window.location.href = 'History.html'; // 修改为你的实际页面路径
+        }
+        function handleLogin_Forum() {
+            window.location.href = 'Forum.html'; // 修改为你的实际页面路径
         }
     </script>
 </body>
